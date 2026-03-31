@@ -1,6 +1,6 @@
 """주간 복습 그래프용 상태 스키마."""
 
-from typing import TypedDict
+# from typing import TypedDict 추후 필요 시 추가
 
 from app.domain.shared.state import BaseState
 

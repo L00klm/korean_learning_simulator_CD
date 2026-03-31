@@ -50,7 +50,7 @@ COPY --from=builder /app/.venv /app/.venv
 
 # 애플리케이션 코드 복사
 COPY app/ ./app/
-COPY data/ ./data/
+# COPY data/ ./data/  # data 폴더가 없으므로 주석 처리
 
 # pyproject.toml, README.md 복사 (uv run에 필요)
 COPY pyproject.toml README.md ./

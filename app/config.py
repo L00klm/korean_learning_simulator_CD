@@ -48,6 +48,8 @@ class Settings:
     # 대화 난이도별 최대 턴 수 (사용자 발화 수 기준)
     turn_limit_by_level: dict[str, int] = None  # type: ignore[assignment]
 
+    environment: str = os.getenv("ENVIRONMENT", "development")
+
     # 평가 항목 가중치 (합계 1.0)
     score_weight_vocab: float = 0.30
     score_weight_context: float = 0.50

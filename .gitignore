@@ -12,6 +12,9 @@ __pycache__/
 # 환경 변수
 .env
 
+#키 값
+.pem
+
 # IDE
 .vscode/
 .idea/

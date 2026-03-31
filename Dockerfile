@@ -67,9 +67,9 @@ ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
     PATH="/app/.venv/bin:$PATH"
 
-# 헬스체크 설정 : 30초마다 /api/v1/health/ 엔드포인트 확인
+# 헬스체크 설정 : 30초마다 /health/ 엔드포인트 확인
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-    CMD curl -fL http://localhost:8000/api/v1/health/ || exit 1
+    CMD curl -fL http://localhost:8000/health/ || exit 1
 
 # 포트 노출
 EXPOSE 8000

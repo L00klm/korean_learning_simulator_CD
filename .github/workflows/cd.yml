@@ -342,6 +342,12 @@ jobs:
             $DOCKER_COMPOSE logs --tail=50
             exit 1
 
+        # cd.yml에 추가
+      - name: Debug EC2 connection
+        run: |
+          echo "Testing SSH connection..."
+          # SSH 테스트 코드
+
   # =========================================================
   # Job 3: 알림 (GitHub Summary)
   # =========================================================
